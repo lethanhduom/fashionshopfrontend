@@ -1,0 +1,71 @@
+/* Modal container */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Mờ nền */
+    z-index: 999;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: #fadac9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Đảm bảo chiều rộng modal phù hợp */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Input field style */
+  .input-field {
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .input-field:focus {
+    border-color: #66b3ff;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px; /* Cách giữa các ô nhập */
+  }
+  
+  /* Submit button */
+  button {
+    padding: 10px 20px;
+    background-color: #66b3ff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ff6f61;
+  }
+  

@@ -1,0 +1,120 @@
+.checkout-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .checkout-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-cart {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .item-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  .item-info {
+    flex: 1;
+    margin-left: 15px;
+  }
+  
+  .item-price {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .checkout-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .total-amount {
+    color: #e63946;
+  }
+  
+  .checkout-form input,
+  .checkout-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .checkout-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .checkout-form button:hover {
+    background-color: #333;
+  }
+  
+  .payment-method {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-method label {
+    display: block;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  .coupon-section {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .coupon-section {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .coupon-section input,
+  .coupon-section select {
+    padding: 8px;
+    font-size: 16px;
+    min-width: 200px;
+  }
+  
+  .discount-note {
+    color: green;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+    

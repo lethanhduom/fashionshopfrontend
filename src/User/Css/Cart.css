@@ -1,0 +1,8 @@
+.product-cart-space{
+    margin-top: 0;
+    background-image: url('../../Image/background_for_cart.jpg');
+    background-repeat: repeat;  /* Giữ lặp lại nền */
+    background-size: cover;      /* Giữ tỷ lệ tự động hoặc có thể dùng cover */
+    min-height: 100vh;          /* Chiều cao tối thiểu bằng 100% chiều cao màn hình */
+    position: relative;
+}

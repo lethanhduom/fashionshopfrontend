@@ -1,0 +1,106 @@
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff6f1; /* Màu nền hồng nhạt */
+    overflow: hidden;
+  }
+  
+  /* Container chính */
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  /* Phần chữ bên trái */
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Dòng kẻ ngang */
+  .hero-line {
+    width: 40px;
+    height: 2px;
+    background: red;
+    margin-bottom: 10px;
+  }
+  
+  /* "New Trend" */
+  .hero-new {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  /* Tiêu đề chính */
+  .hero-text h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  .hero-text h1 span {
+    font-weight: bold;
+  }
+  
+  /* Nút */
+  .hero-link {
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid red;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+  }
+  
+  .hero-link:hover {
+    color: red;
+  }
+  
+  /* Hình ảnh bên phải */
+  .hero-image img {
+    width: 400px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Animation chuyển đổi */
+  .hero-image img,
+  .hero-text h1,
+  .hero-link {
+    opacity: 0;
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Ẩn ảnh trên mobile */
+  @media (max-width: 768px) {
+    .hero-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image img {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,178 @@
+/* Định dạng chung cho header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 130px; /* đảm bảo đúng chiều cao thực tế */
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff6f1 ; /* Không có nền lúc đầu */
+  
+  }
+  
+  /* Khi cuộn xuống */
+  .header.active {
+    background: white;
+    padding: 5px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Định dạng container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  /* Kích thước ảnh logo */
+  .logo {
+    width: 150px;
+  }
+  .logo.active {
+    width:150px;
+  }
+  
+  /* Navbar */
+
+
+.nav-container {
+  margin-left: -10%;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.icon{
+  padding: 16px 24px;
+
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+.icon:hover{
+  background-color: #ff6f61;
+}
+
+
+/* Menu Items */
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav-link:hover {
+  color:red;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: salmon;
+  transform: scaleX(0); /* Ban đầu ẩn đi */
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transform: scaleX(0); /* Ban đầu ẩn đi */
+  transition: transform 0.3s ease-in-out;
+
+}
+
+/* Khi hover vào sẽ hiện gạch dưới */
+.nav-link:hover::after {
+  transform: scaleX(1);
+
+}
+
+
+/* Submenu */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px 0;
+  min-width: 150px;
+  z-index: 100;
+}
+
+.submenu-item {
+  list-style: none;
+}
+
+.submenu-link {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 8px 15px;
+}
+
+.submenu-link:hover {
+  background: #f5f5f5;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  gap: 25px; 
+}
+
+.rightSide svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dropdown-menu{
+  background-color: white;
+  margin: -100px;
+  position: fixed;
+}
+/* Điều chỉnh dropdown */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  z-index: 100;
+}
+

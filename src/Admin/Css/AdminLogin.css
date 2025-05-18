@@ -1,0 +1,65 @@
+.admin-login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #92b2e6, #5888db);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-login-form {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.admin-login-form h2 {
+  margin-bottom: 20px;
+  color: #2a5298;
+}
+
+.admin-icon {
+  margin-bottom: 15px;
+  color: #2a5298;
+}
+
+.admin-login-form input {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.admin-login-form input:focus {
+  border-color: #2a5298;
+  outline: none;
+  box-shadow: 0 0 5px #2a5298aa;
+}
+
+.admin-login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2a5298;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.admin-login-form button:hover {
+  background-color: #1e3c72;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,235 @@
+/* CustomerService.css */
+
+/* Base Styles */
+.fashion-service-container {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff9f5;
+  }
+  
+  /* Header Section */
+  .service-header {
+    margin-top: 130px;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8d5c9;
+  }
+  
+  .brand-title {
+    font-size: 2.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #5a3e36;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .brand-subtitle {
+    font-size: 1.2rem;
+    color: #c7a17a;
+    font-style: italic;
+  }
+  
+  /* Service Notice */
+  .service-notice {
+    background-color: #f8e8e0;
+    padding: 40px;
+    margin-bottom: 60px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .notice-title {
+    font-size: 1.8rem;
+    color: #5a3e36;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .notice-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #5a3e36;
+  }
+  
+  /* Service Features */
+  .service-features {
+    margin-bottom: 80px;
+  }
+  
+  .features-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #5a3e36;
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  .features-title:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    background: #c7a17a;
+    margin: 15px auto;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .feature-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    font-size: 2.5rem;
+    color: #c7a17a;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #5a3e36;
+    font-weight: 400;
+  }
+  
+  .feature-card p {
+    color: #7a6b5e;
+    line-height: 1.6;
+  }
+  
+  /* Contact Methods */
+  .contact-methods {
+    margin-bottom: 80px;
+  }
+  
+  .contact-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #5a3e36;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .contact-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .contact-option {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .contact-icon {
+    font-size: 2.5rem;
+    color: #c7a17a;
+    margin-bottom: 20px;
+  }
+  
+  .contact-option h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #5a3e36;
+    font-weight: 400;
+  }
+  
+  .contact-option p {
+    color: #7a6b5e;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Special Requests */
+  .special-requests {
+    background-color: #f8e8e0;
+    padding: 50px;
+    border-radius: 8px;
+  }
+  
+  .requests-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #5a3e36;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .requests-text {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    color: #5a3e36;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .requests-list {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+  
+  .requests-list li {
+    margin-bottom: 15px;
+    color: #5a3e36;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .brand-title {
+      font-size: 2.2rem;
+    }
+    
+    .service-notice {
+      padding: 30px 20px;
+    }
+    
+    .features-grid, .contact-options {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .brand-title {
+      font-size: 1.8rem;
+    }
+    
+    .service-header {
+      margin-bottom: 40px;
+    }
+    
+    .special-requests {
+      padding: 30px 20px;
+    }
+  }

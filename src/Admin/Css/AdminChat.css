@@ -1,0 +1,33 @@
+.admin-chat-container {
+    display: flex;
+    height: 90vh;
+  }
+  
+  .user-list {
+    width: 250px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    overflow-y: auto;
+  }
+  
+  .user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .chat-box {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .no-chat-selected {
+    text-align: center;
+    padding-top: 50px;
+    font-style: italic;
+  }
+  

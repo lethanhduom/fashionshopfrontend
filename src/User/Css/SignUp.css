@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .signup-container {
+    min-height: 100vh;
+    background-color: #fff6f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .signup-box {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    max-width: 420px;
+    width: 100%;
+    animation: fadeIn 0.4s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .signup-box h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 24px;
+  }
+  
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  
+  .signup-form input {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .submit-btn {
+    padding: 12px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #e6584e;
+  }
+  
+  .social-signup {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-signup p {
+    margin-bottom: 10px;
+    color: #666;
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
+  
+  .google-btn,
+  .facebook-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+  }
+  
+  .google-btn {
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #ccc;
+  }
+  
+  .facebook-btn {
+    background-color: #4267B2;
+    color: white;
+  }
+  
+  .login-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+  }
+  
+  .login-link a {
+    color: #ff6f61;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .signup-form input[list] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  

@@ -1,0 +1,87 @@
+.vnpay-success-container {
+  background: linear-gradient(135deg, #fff6f1, #ffffff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.vnpay-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.success-icon {
+  font-size: 64px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+  animation: pop 0.4s ease;
+}
+
+.error-icon {
+  font-size: 64px;
+  color: #F44336;
+  margin-bottom: 20px;
+  animation: pop 0.4s ease;
+}
+
+.title-success {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.title-error {
+  font-size: 24px;
+  font-weight: bold;
+  color: #F44336;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.order-info {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.btn-back {
+  display: inline-block;
+  background: #4CAF50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-back:hover {
+  background: #43a047;
+}
+
+/* Animations */
+@keyframes pop {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,13 @@
+.order-tracking-space{
+
+    background-color: #fff6f1; /* Màu nền hồng nhạt */
+
+}
+.order-tracking-detail-space{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: #fff6f1; /* Màu nền hồng nhạt */
+    overflow: hidden;
+    margin-top: 150px;
+}

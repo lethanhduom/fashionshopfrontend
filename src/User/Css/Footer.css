@@ -1,0 +1,218 @@
+/* FooterReset.css */
+.footer-reset {
+    background-color: #fee5d0;
+    color: #d1d1d1;
+    padding: 40px 0;
+    margin-top: 50px;
+    
+  }
+  
+  .footer-reset-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-reset-links-container {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .footer-reset-links-column {
+    flex: 1;
+    min-width: 150px;
+  }
+  
+  .footer-reset-links-column h3 {
+    margin-top: 0;
+    margin-bottom: 10px; /* Giảm khoảng cách để đường kẻ gần hơn */
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #000;
+    position: relative; /* Tạo context cho pseudo-element absolute */
+    padding-bottom: 5px; /* Tạo khoảng trống dưới chữ cho đường kẻ */
+  }
+  
+  /* Thêm đường kẻ ngang dưới chữ "Links" */
+  .footer-reset-links-column h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 12px;
+    width: 30px; /* Điều chỉnh độ dài đường kẻ */
+    height: 2px; /* Điều chỉnh độ dày đường kẻ */
+    background-color: #fff; /* Màu của đường kẻ */
+
+  }
+  
+  .footer-reset-links-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-reset-links-column li {
+    margin-bottom: 12px;
+  }
+  
+  .footer-reset-links-column li a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+ 
+  
+
+  
+  .social-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .footer-reset-info {
+    text-align: right;
+  }
+  
+ 
+  
+ 
+  
+  .footer-reset-bottom {
+    background-color: #e6d4c4;
+    color: #a7a7a7;
+    padding: 25px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+  
+  .bottom-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bottom-left span {
+    font-weight: bold;
+  }
+  
+  .bottom-left a {
+    color: #a7a7a7;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .bottom-left .separator {
+    color: #a7a7a7;
+    margin: 0 10px;
+  }
+  
+  .bottom-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bottom-right img {
+    height: 25px;
+    margin-left: 15px;
+  }
+  
+  .bottom-right .separator-left {
+    color: #a7a7a7;
+    margin-left: 15px;
+  }
+  
+  .bottom-right span {
+    margin-left: 10px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-reset-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-reset-links-container {
+      flex-direction: column;
+      gap: 30px;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  
+    .footer-reset-links-column {
+      width: 100%;
+    }
+  
+    .footer-reset-links-column h3 {
+      text-align: center; /* Căn giữa tiêu đề trên mobile */
+      padding-bottom: 5px;
+    }
+  
+    .footer-reset-links-column h3::after {
+      left: 50%;
+      transform: translateX(-50%); /* Căn giữa đường kẻ trên mobile */
+    }
+  
+    /* .footer-reset-social {
+      justify-content: center;
+      width: 100%;
+      top: 50%;
+      margin-bottom: 30px;
+    } */
+  
+    .footer-reset-info {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .footer-reset-bottom {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .bottom-left {
+      margin-bottom: 15px;
+      flex-direction: column;
+    }
+  
+    .bottom-left a, .bottom-left span {
+      margin: 5px 0;
+    }
+  
+    .bottom-left .separator {
+      display: none;
+    }
+  
+    .bottom-right {
+      margin-top: 15px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .bottom-right img {
+      margin: 5px 0;
+    }
+  
+    .bottom-right .separator-left {
+      display: none;
+    }
+  
+    .bottom-right span {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  }

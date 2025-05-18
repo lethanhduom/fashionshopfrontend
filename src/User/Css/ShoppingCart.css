@@ -1,0 +1,138 @@
+.cart-container {
+    max-width: 1000px;
+  overflow-y: scroll;
+
+    /* margin-top: 150px;
+    margin-bottom: 20px;
+    margin-left:10%;
+    margin-right: auto; */
+    top: 150px; left: 0; right: 0; bottom: 0;
+margin: auto;
+    padding: 24px;
+    background: #fff;
+    border-radius: 10px;
+    font-family: 'Segoe UI', sans-serif;
+    position: absolute;
+
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cart-select-all {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    gap: 15px;
+  }
+  
+  .product-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .color-circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .item-quantity button {
+    padding: 4px 10px;
+    font-size: 18px;
+    background: none;
+    border: 1px solid #dfa98b;
+    color: #cd4e09;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .item-quantity button:hover {
+    background: #ecb090;
+    color: white;
+  }
+  
+  .btn-outline {
+    padding: 6px 12px;
+    border: 1px solid #dfa98b;
+    background: none;
+    color: #cd4e09;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+  }
+  
+  .btn-outline:hover {
+    background: #ecb090;
+    color: white;
+  }
+  
+  .cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 18px;
+  }
+  
+  /* Nút xóa màu đỏ */
+  .btn-outline .MuiSvgIcon-root {
+    color: red;
+    font-size: 24px;
+  }
+  
+  .btn-outline:hover .MuiSvgIcon-root {
+    color: white;
+  }
+  
+  /* Nút thanh toán đẹp */
+  .cart-summary .btn-outline {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 18px;
+    border-radius: 8px;
+  }
+  
+  .cart-summary .btn-outline:hover {
+    filter: brightness(1.1);
+    transform: scale(1.02);
+  }
+  

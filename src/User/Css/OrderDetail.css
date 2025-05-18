@@ -1,0 +1,157 @@
+.order-detail-container {
+    display: flex;
+    background: #f1f1f1;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: sans-serif;
+    margin-top: 130px;
+  }
+  
+  .order-detail-left {
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section {
+    margin-bottom: 20px;
+  }
+  
+  .section h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .section h3 {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 4px;
+  }
+  
+  .order-detail-right {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-detail-right h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .order-status {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .stepper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .step-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .circle {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #ccc;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .circle.active {
+    background: #28a745;
+  }
+  
+  .step-item span {
+    margin-left: 6px;
+    font-size: 14px;
+  }
+  
+  .line {
+    width: 30px;
+    height: 2px;
+    background: #ccc;
+    margin: 0 10px;
+  }
+  
+  .product-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .product-item {
+    display: flex;
+    justify-content: space-between;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .product-info {
+    display: flex;
+  }
+  
+  .product-info img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 12px;
+  }
+  
+  .product-name {
+    font-weight: bold;
+  }
+  
+  .color-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 35px;
+  }
+  
+  .color-box {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .product-price {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .total-section {
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+  }
+  
+  .total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .total-final {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
